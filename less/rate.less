@@ -1,3 +1,130 @@
-h1 {
-  color: blue;
+@import "bootstrap.less";
+
+@ratered:     #960A0C;
+@rateyellow:  #EEE6CB;
+
+.clearboth {
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: #555;
+  &:hover {
+    border-bottom: dotted 1px;
+    color: @ratered;
+  }
+  &:visited {
+    color: @ratered;
+  }
+}
+a.white {
+  text-decoration: none;
+  color: #eee;
+  &:hover {
+    border-bottom: dotted 1px;
+    color: #FFF;
+  }
+  &:visited {
+    color: #FFF;
+  }
+}
+
+body {
+  font: 14px/1.15 "Helvetica Neue", Helvetica, Arial, STHeiti,"Microsoft Yahei", sans-serif;
+  margin: 0px;
+  color: #555;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
+
+#header {
+  background-color: @ratered;
+  height: 130px;
+  box-shadow: 0px -10px 10px rgba(0,0,0,0.1) inset;
+  #brand {
+    float: left;
+    color: white;
+    margin: 0px;
+    position: absolute;
+
+    top: 20px;
+    font-size: 46px;
+    line-height: 46px;
+    font-family: "Georgia", serif;
+    font-weight: 300;
+    small {
+      display: block;
+      font-size: 16px;
+    }
+  }
+  #login_form {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    border-left: solid 1px @rateyellow;
+    padding: 10px 20px 0px;
+    input {
+      display: block;
+      margin-bottom: 10px;
+      &[type="submit"] {
+        position: relative;
+        top: -3px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+#navbar {
+  background-color: @rateyellow;
+  height: 30px;
+  ul {
+    padding: 0px;
+    margin: 0px;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      a {
+        text-align: center;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding: 0px 20px;
+        display: inline-block;
+        &:hover {
+          border-bottom: none;
+        }
+      }
+      &:first-child > a{
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+#main {
+
+}
+
+#footer {
+  background-color: @ratered;
+  padding: 10px;
+  p {
+    text-align: center;
+    color: #edd;
+
+  }
 }
