@@ -536,6 +536,9 @@ input[type="submit"].btn.btn-mini {
 .pull-left {
   float: left;
 }
+.title {
+  font-family: serif;
+}
 a {
   text-decoration: none;
   color: #555;
@@ -544,18 +547,12 @@ a:hover {
   border-bottom: dotted 1px;
   color: #960a0c;
 }
-a:visited {
-  color: #960a0c;
-}
 a.white {
   text-decoration: none;
   color: #eee;
 }
 a.white:hover {
   border-bottom: dotted 1px;
-  color: #FFF;
-}
-a.white:active {
   color: #FFF;
 }
 body {
@@ -629,6 +626,10 @@ body {
 }
 #navbar ul li a:hover {
   border-bottom: none;
+}
+#navbar ul li a.active {
+  color: #960a0c;
+  font-weight: bold;
 }
 #navbar ul li:first-child > a {
   padding-left: 10px;

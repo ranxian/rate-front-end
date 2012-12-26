@@ -11,14 +11,16 @@
 .pull-left {
   float: left;
 }
+
+.title {
+  font-family: serif;
+}
+
 a {
   text-decoration: none;
   color: #555;
   &:hover {
     border-bottom: dotted 1px;
-    color: @ratered;
-  }
-  &:visited {
     color: @ratered;
   }
 }
@@ -27,9 +29,6 @@ a.white {
   color: #eee;
   &:hover {
     border-bottom: dotted 1px;
-    color: #FFF;
-  }
-  &:active {
     color: #FFF;
   }
 }
@@ -107,6 +106,10 @@ body {
         &:hover {
           border-bottom: none;
         }
+      }
+      a.active {
+        color: @ratered;
+        font-weight: bold;
       }
       &:first-child > a{
         padding-left: 10px;
