@@ -537,7 +537,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 .title {
-  font-family: serif;
+  font-family: times;
 }
 a {
   text-decoration: none;
@@ -606,6 +606,7 @@ body {
   margin-left: 10px;
 }
 #navbar {
+  clear: both;
   background-color: #eee6cb;
   height: 30px;
 }
@@ -634,15 +635,54 @@ body {
 #navbar ul li:first-child > a {
   padding-left: 10px;
 }
+#main {
+  clear: both;
+}
 #main .container .faq-box p.ask {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
 }
+.view-box {
+  width: 720px;
+  height: 110px;
+  clear: both;
+  padding-top: 10px;
+  border-bottom: solid 3px #960a0c;
+}
+.view-box a.view-title {
+  font-family: serif;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.view-box p.view-type {
+  margin: 0px;
+  padding: 0px;
+  color: #960a0c;
+  font-weight: bold;
+}
+.view-box .view-inner-box {
+  width: 50%;
+  float: left;
+  padding-top: 10px;
+}
+.view-box .view-inner-box p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.view-box .view-inner-box p:first-child {
+  margin-top: 0px;
+}
+.title-addion {
+  padding-left: 30px;
+}
 #footer {
+  clear: both;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15) inset;
   background-color: #960a0c;
   padding: 10px;
+  margin-top: 150px;
 }
 #footer p {
   text-align: center;
