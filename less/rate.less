@@ -3,6 +3,7 @@
 @import "tables.less";
 @ratered:     #960A0C;
 @rateyellow:  #EEE6CB;
+@tableBackgroundHover: @rateyellow;
 
 .clearboth {
   clear: both;
@@ -16,6 +17,21 @@
 
 .title {
   font-family: times;
+}
+
+table#status-table {
+  .status {
+    font-weight: bold;
+  }
+  .status-error {
+    color: red;
+  }
+  .status-running {
+    color: @green;
+  }
+  .status-suceed {
+    color: @blue;
+  }
 }
 
 a {
