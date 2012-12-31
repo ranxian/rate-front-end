@@ -1589,6 +1589,15 @@ table [class*=span],
 .title {
   font-family: times;
 }
+.ratehr {
+  width: 100%;
+  border-bottom: solid 3px #585754;
+  clear: both;
+  height: 1px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 table#status-table .status {
   font-weight: bold;
 }
